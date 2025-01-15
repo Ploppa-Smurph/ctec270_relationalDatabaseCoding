@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTEC 270 - Relational Database Coding wk02: Recognizing Standards and Commands</title>
+</head>
+<body>
+<pre>
+<h1>CTEC 270 - Relational Database Coding wk02: Recognizing Standards and Commands</h1>
+<h2>02A: Understand Standards and Principles</h2>
+<strong>ANSI AND ISO STANDARDS</strong>
+    <strong><em>ANSI (American National Standards Institute)</em></strong>
+
+    <strong><em>ISO (International Organization for Standardization)</em></strong>
+
+<strong>ACID PRINCIPLES</strong>
+    <strong><em>ACID (Atomicity, Consistency, Isolation, Durability)</em></strong>
+        <strong><em>Atomicity</em></strong>
+        <strong><em>Consistency</em></strong>
+        <strong><em>Isolation</em></strong>
+        <strong><em>Durability</em></strong>
+
+<h2>02B: Examine Operating Systems and Command Line Scripting</h2>
+<strong>COMMAND LINE SCRIPTING</strong>
+    <strong><em>Command Prompt</em></strong>
+    <strong><em>Shell</em></strong>
+        <em>Sqlcmd -S</em>
+
+<strong>POWERSHELL</strong>
+    <strong><em>Powershell</em></strong>
+
+<strong>OTHER LANGUAGES</strong>
+    <strong>Python</strong>
+    <strong>SQL (Structured Query Language)</strong>
+
+<h2>02 Summary</h2>
+Guidelines for Recognizing Standards and Commands
+Consider these best practices and guidelines when engaging with data systems and considering standards and ACID principles.
+
+<ol>
+<li>Identify whether your database is following the SQL standards compiled by ANSI and whether your organization has achieved an ISO designation (or if they are pursuing it).</li>
+<li>Familiarize yourself with each one of the ACID principles and how they impact the quality of data when they are applied.</li>
+<li>Understand that there is risk involved when using a data system that does not follow ACID principles.</li>
+<li>You should be able to explain the different options for interacting with your data systems based on your operating system.</li>
+<li>Be prepared to interact with your database using command line prompts.</li>
+<li>Be able to explain the differences between command prompt and PowerShell.</li>
+<li>Familiarize yourself with the programming languages and tools that are appropriate for the organization and their data systems.</li>
+<li>Understand that SQL is the primary language of data and used in many systems.</li>
+</ol>
+
+<h2>02 Review Questions</h2>
+<b>01) A small company wants to automate maintenance tasks on some of its Windows servers. Which Windows-specific scripting language that allows for more complex tasks should the company utilize?</b>
+    <i>PowerShell: PowerShell is a tool that facilitates the same interaction as command prompt and terminal but goes one step further by allowing an engineer to script multiple commands.</i>
+
+<b>02) A medium-sized construction company has multiple Windows servers. The company has its accounting software running on one of the Windows servers. A third-party utility ties into this accounting software, allowing employees to enter time while in the field. Employees reported recently that the utility no longer allows them to submit their time. Which Windows utility could the company use to restart the utility's Windows services?</b>
+    <i>PowerShell: PowerShell is a tool that facilitates the same interaction as command prompt and terminal but goes one step further by allowing an engineer to script multiple commands. It is Windows's main tool used to conduct command-line scripting.</i>
+
+<b>03) A small retailer created a system recommending the right clothing style for customers. However, during a beta test, the retailer found that the system is recommending the wrong clothing style. After investigating, the retailer realized the developer needed to fill out the input form in its entirety. As a result of not filling the form out entirely, the transaction will fail. What ACID principle did the retailer NOT follow?</b>
+    <i>Atomicity: Atomicity guarantees an "all or nothing" approach to transactions, meaning either all the transaction succeeds or none of it does. A data system following this principle will not create partial records or transactions.</i>
+
+<b>04) A database engineer is developing a database that runs on a Windows Server. During the database setup, the engineer needed to start a Windows service to be able to start the database engine. Which Windows utility could the engineer use to start a Windows service?</b>
+    <i>Command Prompt: The command prompt is one of the main tools used to conduct command line scripting in Windows. Command prompt accepts the commands an engineer writes and interacts with the shell, which is actually running the program.</i>
+
+<b>05) A small retailer created a system recommending the right clothing style for customers. However, during a beta test, the retailer discovered they could lose some transactions during a power failure. What ACID principle did the retailer NOT follow?</b>
+    <i>Durability: Durability confirms that once a transaction commits to a system, it will remain in the system. Even during a crash, the record will successfully stay in the system.</i>
+
+<b>06) Which popular programming language runs across a wide range of environments?</b>
+    <i>Python: Python is a programming and scripting language engineers and developers code for many applications, such as software development, querying, and interfacing databases in a wide range of environments.</i>
+
+<b>07) Which international standards body covers a large range of industries, such as manufacturing, sales, and trade associations?</b>
+    <i>ISO: The International Organization for Standardization (ISO) works to develop and publish standards internationally. So, while ANSI focuses on the United States, ISO concerns itself with the entire world. It is important to understand that ISO covers a large range of activities, like those from manufacturing, sales, and trade.</i>
+
+<b>08) A small retailer is creating a system to recommend the right clothing style for customers. However, during a beta test, the retailer discovered that the system recommends the wrong clothing style. In this case, the developer filled out the entire input form. Instead, the transactions got mixed up, and the system did not properly segregate them. What ACID principle did the developer NOT follow?</b>
+    <i>Isolation: Isolation means that all transactions that occur remain separate from other transactions. In a system following this principle, one transaction cannot impact another.</i>
+
+<b>09) A database engineer who mainly works with Windows operating systems is trying to learn about Linux. Which Linux utility could the engineer use to make changes to the operating system or install applications?</b>
+    <i>Terminal: The Linux counterpart to command prompt is terminal, which serves to interact between command lines and the operating system.</i>
+
+<b>10) What United States-specific organization provides the framework in which to develop standards?</b>
+    <i>ANSI: American National Standards Institute (ANSI) is a private, nonprofit organization that administers and coordinates the U.S. voluntary standards and conformity assessment system.</i>
+
+</pre>
+</body>
+</html>

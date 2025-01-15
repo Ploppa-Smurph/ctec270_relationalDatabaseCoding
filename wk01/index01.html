@@ -21,74 +21,121 @@
     - <strong><em>Column-oriented databases</em></strong> - store data in columns rather than rows
     - <strong><em>Graph Databases</em></strong> - store individual data elements as nodes. 
 
+<strong>Relational Database</strong>: 
+    - Contains tables and stores fields in columns and rows of records hold data
+    - Must be designed and not easy to scale
+    - Uses primary and foreign keys to establish relationships that control how certain data relates to data in other tables
+    - Leverages normalization techinques for optimal design
+    - Uses traditional SQL language to query and handle transactions within the database
+    - Expects data to fit within the tables that are designed for the database
+
+<strong>Non-Relational Database</strong>
+    - Stores data differently depending on the type of data required by a specific development
+    - Can easily be built and scaled for web-based applications
+    - Uses key-value pairs designed to work for the data being stored
+    - Does not require detailed planning and structure to build
+    - Uses various programming languages to retrieve and handle transactions within the stored data
+    - Can store structutured and undstructured data with more flexability
+
 <h2>01B: Understanding Different Types of NoSQL Databases and Tools</h2>
+<strong>Key-Value Pairs</strong> - A type of non-relational structure that establishes a unique identifier or key field and maps it to a value.
+<strong>Collections</strong> - A group of documents with contents that would be considered similar in nature.
+<strong>Key-Value Store</strong> - A set of key-value pairs. (ex: phone directory)
+
+<strong>Column-Oriented Databases</strong>
+<strong>Online Analytical Processing (OLAP)</strong> - ex: complex queries & analytics of big data
+
+<strong>Online Transaction Processing</strong> - ex: ATM transactions; not good for column-oriented due to how data is stored
+
+<strong>Graph Databases</strong> - stores elements as nodes; can handle structured, unstructured, and semi-structured data
+
+<strong>Non-Relational Data Systems</strong>
+    <strong><em>Apache Cassandra</em></strong> - open source, column-oriented database
+    <strong><em>MongoDB</em></strong>   - open source, Document-oriented database
+    <strong><em>Neo4j</em></strong> - open source, Graph Database technology
+    <strong><em>Amazon DynamoDB</em></strong> - key-value store DB system
+    <strong><em>Azure Cosmos DB</em></strong> - multi-model database from Microsoft
+
+
 
 <h2>01C: Understanding Relational Database Design</h2>
 
 <h2>01D: Identify Other Data Systems</h2>
 
 <h2>01 Summary</h2>
+Guidelines for Understanding Database Types and Structures
+Consider these best practices and guidelines when you are working with the various databases and systems at your organization.
+
+<ol>
+<li>Identify whether the database is relational or non-relational.</li>
+<li>Ensure you have a clear understanding of the application or function the database serves to the organization.</li>
+<li>For non-relational databases, you must be able to recognize what type of database it is and what technology it uses and what languages.</li>
+<li>For relational databases, you will need to understand how data is normalized and how that impacts the storage.</li>
+<li>In the systems you support, it is crucial to know how the tables are related, what the key fields are, and what types of relationships exist.</li>
+<li>Be familiar with reading entity relationship diagrams to understand the schema (design) of the data system.</li>
+<li>Be aware of any other data systems your organization uses, such as data warehouses and data marts.</li>
+</ol>
 
 <h2>01 Review Questions</h2>
-<b>01) </b>
-    <i></i>
+<b>01) A data scientist built a database that can relate data between different tables and leverage normalization techniques. Which style of database did the scientist develop?</b>
+    <i>Relational : A relational database uses primary and foreign keys to establish relationships that control how certain data relates to data in other tables. It also leverages normalization techniques for optimal design.</i>
 
-<b>02) </b>
-    <i></i>
+<b>02) A data scientist is using a platform that can query many databases that are all centrally housed without impacting performance, even though the data came from many disparate groups the company acquired over the years. Which kind of database structure type did the company implement?</b>
+    <i>Data Warehouse: </i>
 
-<b>03) </b>
-    <i></i>
+<b>03) During database architecture design, how might a developer depict the actual database schema?</b>
+    <i>Physical Data Model: A physical data model is the actual data system with tables, relationships, fields, and attributes. The developer can use this model type to see exactly how components within the database will operate.</i>
 
-<b>04) </b>
-    <i></i>
+<b>04) After the initial planning phase of a database design project, the database analyst is looking to develop the basic mockup to a more detailed view, including the data fields and the relationship between them. Which kind of data design model would best fit this analyst's intent?</b>
+    <i>Logical Data: Sometimes it is easier to flesh out how different databases, tables, and their data work with each other. A logical data model is a detailed view of the conceptual model, including data fields and the relationships between them.</i>
 
-<b>05) </b>
-    <i></i>
+<b>05) A small research company would like to purchase database technology to allow it to build graphs for its online platform while minimizing the need for database administration. What is one example of an open-source NoSQL graph technology?</b>
+    <i>Neo4j: Neo4j is an open-source non-relational (NoSQL) graph database technology. The subscription-based service enables people to build graph applications without the need for database administration.</i>
 
-<b>06) </b>
-    <i></i>
+<b>06) A large worldwide retailer wants to build a new website with a non-relational database for its ability to scale. The retailer is looking to build the website to allow it to count the total number of orders in real-time. Which basic category of a non-relational database would fit that purpose?</b>
+    <i>Column-Oriented: Column-oriented databases store data in columns rather than rows. This design makes analysis easier in some cases, such as when counting the total number of orders.</i>
 
-<b>07) </b>
-    <i></i>
+<b>07) A small medical outpatient facility is looking to develop a digital record to move off hard copy files. Which is the best type of database structure the company should use for its database?</b>
+    <i>Non-Relational Database: A non-relational (NoSQL) database would fit better for medical companies, allowing them to store various data within an individual record, such as patient data</i>
 
-<b>08) </b>
-    <i></i>
+<b>08) A small business-to-business intermediary supplier ran into an issue where clients could not receive supplies from a specific manufacturer, even though the products were in stock. One of the platform developers noticed that they could add products to one table without specifying a valid manufacturer. What aspect of data management might the platform lack?</b>
+    <i>Referential integrity helps to prevent the occurrence of bad or missing data in any of the tables in the design. In short, it ensures that the database users cannot add records when a related record does not exist.</i>
 
-<b>09) </b>
-    <i></i>
+<b>09) A small blog platform developer looks to create a small database system for the platform to store blog articles in small files filled with JSON code. Which kind of database style would best suit the developer's needs?</b>
+    <i>Document-Oriented: Document-oriented databases store data in Extensible Markup Language (XML) documents or JavaScript Object Notation (JSON). They are flexible in allowing developers to reshape the data to meet the format needed for the application.</i>
 
-<b>10) </b>
-    <i></i>
+<b>10) After developing a relational database, the research company is looking to develop a front-end system to allow it to search for trends in the data. What would a data scientist for the research company use to perform searches of a database?</b>
+    <i>SQL: Structured query language (SQL) is a language built to query and manage data in a relational database. SQL is a programming language for data. However, it is important to remember that SQL is not a single software.</i>
 
-<b>11) </b>
-    <i></i>
+<b>11) During the planning phase of a database design project, a database analyst wants to depict a basic mockup of how the database and the various tables will work. Which kind of data design model could the analyst create?</b>
+    <i>Conceptual Data: The conceptual data model is a model representing the starting point. It will list all the tables and their potential relationships. A company can use a conceptual data model in the initial stages of development.</i>
 
-<b>12) </b>
-    <i></i>
+<b>12) A company created a new database to store data built around a constant and a variable. The company built the database in this manner to make it more flexible. Which kind of data structure type did the company most likely use?</b>
+    <i>Key-Value: Key-value stores store each value with a key value. Key-value is similar to a table with only two columns: a field (key) and a value.</i>
 
-<b>13) </b>
-    <i></i>
+<b>13) A large gaming company is developing a new system for its online streaming platform to handle analytics. Which kind of database would best fit the company's needs?</b>
+    <i>Column-Oriented: Column-oriented databases store data in columns rather than rows. This design can make for easier analysis in some cases, such as when counting the total number of orders.</i>
 
-<b>14) </b>
-    <i></i>
+<b>14) After a security breach, a company realized that its system structured data in a way that did not prevent employees from accessing data the company did not intend for them to access. What kind of database structure type can segregate the data to prevent this issue in the future?</b>
+    <i>Data Mart: A data mart is a subset of the data warehouse. Data marts also ensure that data is secure and only available to the users who should have access to that data.</i>
 
-<b>15) </b>
-    <i></i>
+<b>15) A large multinational company is embarking on a plan to congregate hundreds of different databases from its many subsidiaries into one location. This strategy will allow the company to both unify the data and to be able to query all the databases. What database structure does this plan describe?</b>
+    <i>Data Warehouse: Data warehouses unify and hold data from multiple source systems. As a result, warehouses can query different data from different systems together without impacting the performance of the separate source systems.</i>
 
-<b>16) </b>
-    <i></i>
+<b>16) A newly hired data analyst wants to understand how their company’s database works. What visual way of depicting the database could the analyst create to understand the various aspects of the database better?</b>
+    <i>Entiy Relationship: The analyst is looking to understand the various aspects of the database better. A visual method describes Entity relationship models, which are diagrams to identify each database schema and show the relationships between the data held in the various databases and how they relate.</i>
 
-<b>17) </b>
-    <i></i>
+<b>17) Which kind of database structure type orders data items sequentially?</b>
+    <i>Linear: Linear structures are ideal for data items that companies need for ordering sequentially, while non-linear structures are well suited for big data structures and apps in constant flux.</i>
 
-<b>18) </b>
-    <i></i>
+<b>18) A data scientist is developing a database for a small research company. The scientist is looking to set up a database to help determine trends. Why might this data scientist use a relational database?</b>
+    <i>A relational database can help establish links: A relational database fits best for scenarios requiring the ability to track trends. It uses primary and foreign keys to establish relationships that control how certain data relates to data in other tables.</i>
 
-<b>19) </b>
-    <i></i>
+<b>19) Where might a system store data when initially collected but not yet ready for analysis and further use?</b>
+    <i>Data Lake: A data lake is a storage area within a system that stores collected data that is not ready for cleaning or analysis.</i>
 
-<b>20) </b>
-    <i></i>
+<b>20) Months ago, a company completed its plan to congregate many different databases to one location. The company now wants to implement better controls on the data by segregating data into specific groups. What kind of database structure would best fit this new plan?</b>
+    <i>Data Mart: A data mart is a subset of the data warehouse. Data marts also ensure that data is secure and only available to the users who should have access to that data.</i>
 
 </pre>
 </body>

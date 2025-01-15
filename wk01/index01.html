@@ -76,12 +76,14 @@ Consider these best practices and guidelines when you are working with the vario
 <li>Be aware of any other data systems your organization uses, such as data warehouses and data marts.</li>
 </ol>
 
-<h2>01 Review Questions</h2>
+<h2>01 - PBQ (Performance Based Questions)</h2>
+
+<h2>01 - Review Questions</h2>
 <b>01) A data scientist built a database that can relate data between different tables and leverage normalization techniques. Which style of database did the scientist develop?</b>
     <i>Relational : A relational database uses primary and foreign keys to establish relationships that control how certain data relates to data in other tables. It also leverages normalization techniques for optimal design.</i>
 
 <b>02) A data scientist is using a platform that can query many databases that are all centrally housed without impacting performance, even though the data came from many disparate groups the company acquired over the years. Which kind of database structure type did the company implement?</b>
-    <i>Data Warehouse: </i>
+    <i>Data Warehouse: Data warehouses unify and hold data from multiple source systems. As a result, warehouses can query different data from different systems together without impacting the performance of the separate source systems.</i>
 
 <b>03) During database architecture design, how might a developer depict the actual database schema?</b>
     <i>Physical Data Model: A physical data model is the actual data system with tables, relationships, fields, and attributes. The developer can use this model type to see exactly how components within the database will operate.</i>
@@ -99,7 +101,7 @@ Consider these best practices and guidelines when you are working with the vario
     <i>Non-Relational Database: A non-relational (NoSQL) database would fit better for medical companies, allowing them to store various data within an individual record, such as patient data</i>
 
 <b>08) A small business-to-business intermediary supplier ran into an issue where clients could not receive supplies from a specific manufacturer, even though the products were in stock. One of the platform developers noticed that they could add products to one table without specifying a valid manufacturer. What aspect of data management might the platform lack?</b>
-    <i>Referential integrity helps to prevent the occurrence of bad or missing data in any of the tables in the design. In short, it ensures that the database users cannot add records when a related record does not exist.</i>
+    <i>Referential integrity: Referential integrity helps to prevent the occurrence of bad or missing data in any of the tables in the design. In short, it ensures that the database users cannot add records when a related record does not exist.</i>
 
 <b>09) A small blog platform developer looks to create a small database system for the platform to store blog articles in small files filled with JSON code. Which kind of database style would best suit the developer's needs?</b>
     <i>Document-Oriented: Document-oriented databases store data in Extensible Markup Language (XML) documents or JavaScript Object Notation (JSON). They are flexible in allowing developers to reshape the data to meet the format needed for the application.</i>
@@ -123,7 +125,7 @@ Consider these best practices and guidelines when you are working with the vario
     <i>Data Warehouse: Data warehouses unify and hold data from multiple source systems. As a result, warehouses can query different data from different systems together without impacting the performance of the separate source systems.</i>
 
 <b>16) A newly hired data analyst wants to understand how their company’s database works. What visual way of depicting the database could the analyst create to understand the various aspects of the database better?</b>
-    <i>Entiy Relationship: The analyst is looking to understand the various aspects of the database better. A visual method describes Entity relationship models, which are diagrams to identify each database schema and show the relationships between the data held in the various databases and how they relate.</i>
+    <i>Entity Relationship: The analyst is looking to understand the various aspects of the database better. A visual method describes Entity relationship models, which are diagrams to identify each database schema and show the relationships between the data held in the various databases and how they relate.</i>
 
 <b>17) Which kind of database structure type orders data items sequentially?</b>
     <i>Linear: Linear structures are ideal for data items that companies need for ordering sequentially, while non-linear structures are well suited for big data structures and apps in constant flux.</i>
